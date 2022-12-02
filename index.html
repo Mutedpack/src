@@ -48,8 +48,7 @@
         background-repeat: none;
         background-position: center;
         width: var(--fullWidth);
-
-        height: 100vh;
+        height: var(--fullHeight);
         background-size: cover;
 
     }
@@ -97,6 +96,17 @@
         border-style: solid;
         width: 100%;
 
+    }
+
+    @media (max-width: 500px) {
+        .landingPage {
+            background-image: url("img/Skier_Mobile.jpg");
+            background-repeat: none;
+            background-position: center;
+            width: var(--fullWidth);
+            height: var(--fullHeight);
+            background-size: cover;
+        }
     }
 </style>
 <style>
