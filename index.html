@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dustys Ski Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,800;8..144,900;8..144,1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5421b0c9fe.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    :root {
+        --green: #63e009;
+        --orange: #f6681f;
+        --navbar: #0089c6;
+
+    }
+
+    body {
+        margin: 0;
+        font-family: "Roboto Flex";
+        overflow-x: hidden;
+    }
+
+    /* body::-webkit-scrollbar {
+        width: 0 !important
+    }
+
+    body {
+        overflow: -moz-scrollbars-none;
+    } */
+
+    .fullWidth {
+        width: calc(var(--vw, 1vw) * 100);
+    }
+
+    .fullHeight {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .landingPage {
+        background-image: url("img/AdobeStock_235490285.jpeg");
+        background-repeat: none;
+        background-position: center;
+        width: var(--fullWidth);
+
+        height: 100vh;
+        background-size: cover;
+
+    }
+
+    .navbar {
+        width: var(--fullWidth);
+        height: 40px;
+        background-color: rgba(255, 255, 255, .5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: end;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+    }
+
+    .menuItem {
+        color: var(--orange);
+        font-weight: 700;
+    }
+
+    .menuItem:hover {
+        color: var(--green);
+    }
+
+    .logo {
+        color: black;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+
+
+    .horizontalLine {
+        border-color: var(--orange);
+        border-width: 4px 0 0 0;
+        border-style: solid;
+        width: 100%;
+
+    }
+</style>
+<style>
+    .infoPageGraphic {
+        background-color: var(--orange);
+        height: 100%;
+        width: 20px;
+        justify-self: center;
+
+    }
+
+    .infoPageElement {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        margin-top: 40px;
+        width: 400px;
+    }
+
+    .infoPage {
+        width: 100vw;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 80px;
+        background-color: #c3c7cf;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .infoItem {
+        margin-top: 5px;
+    }
+
+    .infoItemHours {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+    }
+
+    .infoPageDetails {}
+
+    .infoPageDetailsHeader {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .days {
+        font-weight: 550;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo" style="justify-self:left;grid-column:1">
+            <div>
+                <div style="margin-left:20px; "><i class="fa-solid fa-person-snowboarding"></i></div>
+            </div>
+
+        </div>
+        <div class="menu" style="grid-column:3">
+            <div class="menuItem">Rentals</div>
+            <div class="menuItem">Services</div>
+            <div class="menuItem">Gear</div>
+            <div class="menuItem"></div>
+        </div>
+    </div>
+
+    <div class="landingPage"></div>
+
+    <div style="width:100vw;">
+        <div class="horizontalLine"></div>
+    </div>
+
+    <div class="infoPage">
+        <div class="infoPageElement">
+            <div class="infoPageGraphic"></div>
+            <div class="infoPageDetails">
+                <div class="infoItem infoPageDetailsHeader">HOURS</div>
+                <div class="infoItem infoItemHours">
+                    <div>MON-FRI</div>
+                    <div>11AM - 6PM </div>
+                </div>
+                <div class="infoItem infoItemHours">
+                    <div>SAT</div>
+                    <div>10AM - 4PM</div>
+                </div>
+                <div class="infoItem">(Open Sundays when Bluewood Opens)</div>
+            </div>
+        </div>
+        <div class="infoPageElement">
+            <div class="infoPageGraphic"></div>
+            <div class="infoPageDetails">
+                <div class="infoItem infoPageDetailsHeader">CONSIGNMENT</div>
+                <div class="infoItem infoItemHours">
+                    <div>SAT</div>
+                    <div> 7:30AM - 8:45AM</div>
+                </div>
+                <div class="infoItem infoItemHours">
+                    <div>SUN</div>
+                    <div>10AM - 11AM</div>
+                </div>
+            </div>
+        </div>
+        <div class="infoPageElement">
+            <div class="infoPageGraphic"></div>
+            <div class="infoPageDetails">
+                <div class="infoItem infoPageDetailsHeader">Ski Swap</div>
+                <div class="infoItem infoItemHours">
+                    <div>DEC 3RD </div>
+                    <div>9AM - 5PM</div>
+                </div>
+                <div class="infoItem infoItemHours">
+                    <div>DEC 4TH </div>
+                    <div>11AM - 2PM</div>
+                </div>
+                <div class="infoItem">Walla Walla Fairgrounds</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+
+            showWidthHeight();
+
+            window.addEventListener("resize", () => {
+                showWidthHeight();
+            });
+        };
+
+        function showWidthHeight() {
+            let windowInnerWidth = window.innerWidth;
+            let windowInnerHeight = window.innerHeight;
+            let elementClientWidth = document.documentElement.clientWidth;
+            let elementClientHeight = document.documentElement.clientHeight;
+            let elementOffsetWidth = document.documentElement.offsetWidth;
+            let elementOffsetHeight = document.documentElement.offsetHeight;
+            let pageBreak = "</br>";
+
+
+            let vh = windowInnerHeight * 0.01;
+            document.documentElement.style.setProperty("--vh", `${vh}px`);
+            document.documentElement.style.setProperty("--fullHeight", `${windowInnerHeight}px`);
+            let vw = elementClientWidth * 0.01;
+            document.documentElement.style.setProperty("--vw", `${vw}px`);
+            document.documentElement.style.setProperty("--fullWidth", `${elementClientWidth}px`);
+
+            let message = "windowInnerWidth....." + windowInnerWidth + pageBreak + "elementClientWidth..." + elementClientWidth + pageBreak + "elementOffsetWidth..." + elementOffsetWidth + pageBreak;
+            message += pageBreak + "windowInnerHeight...." + windowInnerHeight + pageBreak + "elementClientHeight.." + elementClientHeight + pageBreak + "elementOffsetHeight.." + elementOffsetHeight + pageBreak;
+
+            console.log(vw, vh);
+
+        }
+    </script>
+</body>
+
+</html>
